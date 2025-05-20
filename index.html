@@ -1,51 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meu Portfólio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Página Pessoal</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Estilo personalizado -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 2rem 0;
+    }
+    .section-title {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #0d6efd;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
 
-  >
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Minha Jornada</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#apresentacao">Apresentação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#curso">Curso</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Apresentação -->
-  <section id="apresentacao" class="container my-5">
-    <h2>Apresentação e Trajetória</h2>
-    <p><strong>Nome:</strong> Kauã elias de Melo Soares</p>
-    <p><img src="https://instagram.fplu21-1.fna.fbcdn.net/v/t51.2885-19/481604694_1209031523974177_3207328892466723889_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fplu21-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2QFvV1wQw1TnhEJNlax077Hu0KHOeSYboht8zzSFVTs4iR2j8Uup8RW3tZReQQGEk9Q&_nc_ohc=7j14L_M14igQ7kNvwExPSnX&_nc_gid=si0SMhFUQgnRIHgY2uh7eQ&edm=AGFyKLkBAAAA&ccb=7-5&oh=00_AfLIf2fA66GBplmwpTqywpoSMRxQLJwTc-L9vZrzmBE0PQ&oe=68294376&_nc_sid=5a0a6d" alt="" width="500"></p>
-    <p>Olá! Sou estudante da área de tecnologia, iniciei minha trajetória no curso técnico aprendendo HTML, CSS e lógica de programação.</p>
-    <p>Meu objetivo é seguir carreira como desenvolvedor e continuar aprendendo novas tecnologias.</p>
+  <header id="apresentacao">
+    <div class="container text-center">
+      <img src="https://i.postimg.cc/gJ23g0hg/3962f87c-c3df-4310-ad28-0d10f8e430b6.jpg" alt="Foto de perfil" class="rounded-circle mb-3" />
+      <h1>Kauã Elias</h1>
+      <p class="lead">Desenvolvedor em formação apaixonado por tecnologia e inovação.</p>
+    </div>
+  </header>
+
+  <section class="container" id="trajetoria">
+    <h2 class="section-title">Minha Trajetória</h2>
+    <p>Sou um entusiasta da tecnologia, atualmente em processo de transição de carreira para a área de desenvolvimento web. Iniciei meus estudos com HTML, CSS e Bootstrap e estou determinado a evoluir como desenvolvedor full stack. Meus objetivos futuros incluem trabalhar em projetos inovadores e impactar positivamente o mundo através da tecnologia.</p>
   </section>
 
-  <!-- Habilidades -->
-  <section id="habilidades" class="container my-5">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Bootstrap</li>
-    </ul>
+  <!-- Habilidades Técnicas -->
+  <section class="container" id="habilidades">
+    <h2 class="section-title">Habilidades Técnicas</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fab fa-html5 fa-3x text-danger mb-3"></i>
+            <h5 class="card-title">HTML5</h5>
+            <p class="card-text">Estruturação semântica de páginas web.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fab fa-css3-alt fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">CSS3</h5>
+            <p class="card-text">Estilização e responsividade com boas práticas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="fab fa-bootstrap fa-3x text-purple mb-3"></i>
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">Criação de layouts responsivos com componentes prontos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Aprendizado -->
-  <section id="aprendizado" class="container my-5">
-    <h2>O que Aprendi no Curso</h2>
-    <p>Aprendi a criar páginas com estrutura HTML semântica, usar CSS para estilizar, tornar páginas responsivas com Bootstrap e aplicar boas práticas no desenvolvimento web.</p>
-    <p>Esses aprendizados foram importantes para minha evolução e me ajudaram a entender como funciona o desenvolvimento de sites.</p>
+  <!-- Conhecimentos do Curso -->
+  <section class="container" id="curso">
+    <h2 class="section-title">O que Aprendi no Curso</h2>
+    <p>No curso, aprendi a criar páginas estruturadas com HTML5 e estilizadas com CSS3. Descobri o poder do Bootstrap para construir layouts responsivos de forma ágil, utilizando o sistema de grid, componentes como cards, botões e navegação. Esses conhecimentos foram fundamentais para me sentir mais confiante em iniciar projetos práticos e seguir no caminho do desenvolvimento web.</p>
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="container my-5">
-    <h2>Contato</h2>
-    <p>Email: <a >meu email</a></p>
-    <p>LinkedIn: <a ="meu email" target="_blank">meu email</a></p>
-    <p>GitHub: <a ="meu email" target="_blank">meu email</a></p>
-    <a href="" class="btn btn-primary">Fale Comigo</a>
+  <section class="container" id="contato">
+    <h2 class="section-title">Contato</h2>
+    <p>Se quiser conversar ou colaborar em algum projeto, entre em contato:</p>
+    <ul class="list-unstyled">
+      <li><i class="fas fa-envelope"></i> kauaeliasmelo0001@email.com</li>
+      <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kauaelias" target="_blank">LinkedIn</a></li>
+      <li><i class="fab fa-github"></i> <a href="https://github.com/kauaelias" target="_blank">GitHub</a></li>
+    </ul>
+    <a href="kauaeliasmelo0001@email.com" class="btn btn-primary mt-2">Fale Comigo</a>
   </section>
 
-  
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Kauã Elias. Todos os direitos reservados.</p>
+  </footer>
 
-  
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

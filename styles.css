@@ -1,1 +1,38 @@
 
+/* Cor de fundo personalizada para o cartão */
+.card-custom {
+  background-color: #a3d8f4; /* Azul claro */
+}
+
+.card-custom .card-body {
+  color: #333; /* Cor de texto padrão */
+}
+
+.btn-custom {
+  background-color: #007bff; /* Azul escuro para o botão */
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo para a imagem de perfil */
+img.rounded-circle {
+  border-radius: 50%;
+}
+
+/* Estilo para o layout da página */
+body {
+  background-color: #FFE4C4;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+object-fit: cover;
+border-radius: 50% ;
+width: 250;
+height: 250;
+overflow: hidden;
+}
